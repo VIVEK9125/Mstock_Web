@@ -3,7 +3,7 @@
 <suite name="Suite">
   <test thread-count="5" name="Test">
     <classes>
-      <class name="MStock_Web.MStock_Web.AppTest"/>
+      <class name="hooks.ApplicationHooks"/>
     </classes>
   </test> <!-- Test -->
 </suite> <!-- Suite -->
