@@ -53,7 +53,7 @@ public class Mstock_login_Step
 	public void the_risk_discloures_page_should_be_open_and_able_to_click_on_continue_button() throws InterruptedException {
 //		Thread.sleep(1000);
 //		MStocklogin.featchtitle();
-		Thread.sleep(10000);
+		Thread.sleep(20000);
 	  MStocklogin.clkcontineus();
 	}
 	
@@ -83,6 +83,7 @@ public class Mstock_login_Step
 	@When("To verify User is able to see the amount of  Cash")
 	public void to_verify_user_is_able_to_see_the_amount_of_cash() {
 		MStocklogin.cashdata();
+		  // MStocklogin.Scrolling();
 	}
 
 	@Then("To verify the {string}")
@@ -115,16 +116,33 @@ public class Mstock_login_Step
 	 //  MStocklogin.Scrolling();
 	   MStocklogin.refer_eran();
 	   Thread.sleep(1000);
-	   MStocklogin.Scrolling();
+	  // MStocklogin.Scrolling();
 	   MStocklogin.mover();
 	}
 
 	@When("To verify User is able to see the {string}  in which is able to see the {string} And {string} below to Market Movers")
 	public void to_verify_user_is_able_to_see_the_in_which_is_able_to_see_the_and_below_to_market_movers(String string, String string2, String string3) throws InterruptedException {
+	MStocklogin.moverdata();
+	MStocklogin.loser();
+	Thread.sleep(1000);
+	MStocklogin.moverdata();
+	Thread.sleep(1000);
+	MStocklogin.ganerclick();
+	Thread.sleep(1000);
+	MStocklogin.moverdata();
 	
-		MStocklogin.writeDataToExcel(string2, string3);
-	MStocklogin.the_user_captures_the_new_data();
-	MStocklogin.the_data_should_be_different();
+//	MStocklogin.writeDataToExcel(string2, string3);
+//	MStocklogin.the_user_captures_the_new_data();
+//	MStocklogin.the_data_should_be_different();
 	
+	}
+	@When("To verify User is able to see the {string} besides {string} CTA and it is clickable")
+	public void to_verify_user_is_able_to_see_the_besides_cta_and_it_is_clickable(String string, String string2) {
+	   MStocklogin.viewAll();
+	}
+
+	@Then("The CTA page Should be Open")
+	public void the_cta_page_should_be_open() {
+	    MStocklogin.NSCBSC();
 	}
 }

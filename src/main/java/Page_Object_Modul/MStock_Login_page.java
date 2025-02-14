@@ -165,6 +165,15 @@ public class MStock_Login_page
     private WebElement gainer;
     @FindBy(xpath = "//p[text()='Market Movers']")
     private WebElement gettext;
+    @FindBy(xpath = "//a[text()='Losers']")
+    private WebElement losers;
+    @FindBy(xpath = "//a[text()='Gainers']")
+    private WebElement gainers;
+    @FindBy(xpath = "(//a[text()='View All'])[4]")
+    private WebElement ViewAll;
+    @FindBy(xpath = "//div[@class='nse-bse ng-star-inserted']")
+    private WebElement NSC_BSC;
+    
     String initialData;
     String newData;
     
@@ -217,12 +226,31 @@ public void mover() {
 	    System.out.println(Years);
 	}
 	public void Scrolling() {
-		Jv.executeScript("window.scrollBy(0,500)");
+		Jv.executeScript("window.scrollBy(0,1000)");
 	}
 	public void refer_eran() {
 		String validaterefer =refer.getText();
 		System.out.println(validaterefer);
 		
+	}
+	
+	public void moverdata() {
+		String text=gainer.getText();
+		System.out.println(text);
+	}
+	public void loser() {
+		losers.click();
+		 
+	}
+	public void ganerclick() {
+		gainers.click();
+	}
+	public void viewAll() {
+		ViewAll.click();
+	}
+	public void NSCBSC() {
+	String 	NSC=NSC_BSC.getText();
+	System.out.println(NSC);
 	}
 	public void writeDataToExcel(String string, String initialData2) throws InterruptedException {
 		WebElement dataElement = wait.until(ExpectedConditions.presenceOfElementLocated(By.xpath("(//div[@class='indices-box'])[2]")));

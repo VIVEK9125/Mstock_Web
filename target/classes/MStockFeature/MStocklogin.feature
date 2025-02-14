@@ -22,6 +22,8 @@ Feature: MStock Login functionality
   And The User click on Year and featch the data
   Then verify the refer and Earn
   When To verify User is able to see the "Market Movers"  in which is able to see the "Gainers" And "Losers" below to Market Movers
+  When To verify User is able to see the "View All " besides "Most traded on Mstock" CTA and it is clickable
+ Then The CTA page Should be Open
   
 
 
