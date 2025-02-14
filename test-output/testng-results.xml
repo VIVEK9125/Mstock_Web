@@ -2,26 +2,26 @@
 <testng-results ignored="0" total="1" passed="0" failed="1" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2025-02-14T17:14:22 IST" name="Default suite" finished-at="2025-02-14T17:15:06 IST" duration-ms="43896">
+  <suite started-at="2025-02-14T17:26:05 IST" name="Default suite" finished-at="2025-02-14T17:26:47 IST" duration-ms="42479">
     <groups>
       <group name="cucumber">
         <method signature="AbstractTestNGCucumberTests.runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.Mstock@4e50c791]" name="runScenario" class="io.cucumber.testng.AbstractTestNGCucumberTests"/>
       </group> <!-- cucumber -->
     </groups>
-    <test started-at="2025-02-14T17:14:22 IST" name="Default test" finished-at="2025-02-14T17:15:06 IST" duration-ms="43896">
+    <test started-at="2025-02-14T17:26:05 IST" name="Default test" finished-at="2025-02-14T17:26:47 IST" duration-ms="42479">
       <class name="runner.Mstock">
-        <test-method is-config="true" signature="setUpClass(org.testng.ITestContext)[pri:0, instance:runner.Mstock@4e50c791]" started-at="2025-02-14T17:14:22 IST" name="setUpClass" finished-at="2025-02-14T17:14:23 IST" duration-ms="520" status="PASS">
+        <test-method is-config="true" signature="setUpClass(org.testng.ITestContext)[pri:0, instance:runner.Mstock@4e50c791]" started-at="2025-02-14T17:26:05 IST" name="setUpClass" finished-at="2025-02-14T17:26:05 IST" duration-ms="524" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[org.testng.TestRunner@6b6def36]]>
+                <![CDATA[org.testng.TestRunner@496cedbb]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUpClass -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.Mstock@4e50c791]" started-at="2025-02-14T17:14:23 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2025-02-14T17:15:04 IST" duration-ms="40867" status="FAIL">
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.Mstock@4e50c791]" started-at="2025-02-14T17:26:05 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2025-02-14T17:26:45 IST" duration-ms="39558" status="FAIL">
           <params>
             <param index="0">
               <value>
@@ -42,9 +42,9 @@ For documentation on this error, please visit: https://www.selenium.dev/document
 Build info: version: '4.25.0', revision: '8a8aea2337'
 System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '23.0.1'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [9ec40c6ab442dde79c89ada787408165, findElement {value=//button[text()='I understand, continue'], using=xpath}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 132.0.6834.110, chrome: {chromedriverVersion: 132.0.6834.159 (2d77d3fc445..., userDataDir: C:\Users\VIVEK~1.NIT\AppDat...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:52717}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:52717/devtoo..., se:cdpVersion: 132.0.6834.110, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 9ec40c6ab442dde79c89ada787408165]]>
+Command: [a4865250f472cac184cd26409ebd8aac, findElement {value=//button[text()='I understand, continue'], using=xpath}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 132.0.6834.110, chrome: {chromedriverVersion: 132.0.6834.159 (2d77d3fc445..., userDataDir: C:\Users\VIVEK~1.NIT\AppDat...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:54777}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:54777/devtoo..., se:cdpVersion: 132.0.6834.110, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: a4865250f472cac184cd26409ebd8aac]]>
             </message>
             <full-stacktrace>
               <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//button[text()='I understand, continue']"}
@@ -53,9 +53,9 @@ For documentation on this error, please visit: https://www.selenium.dev/document
 Build info: version: '4.25.0', revision: '8a8aea2337'
 System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '23.0.1'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [9ec40c6ab442dde79c89ada787408165, findElement {value=//button[text()='I understand, continue'], using=xpath}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 132.0.6834.110, chrome: {chromedriverVersion: 132.0.6834.159 (2d77d3fc445..., userDataDir: C:\Users\VIVEK~1.NIT\AppDat...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:52717}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:52717/devtoo..., se:cdpVersion: 132.0.6834.110, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 9ec40c6ab442dde79c89ada787408165
+Command: [a4865250f472cac184cd26409ebd8aac, findElement {value=//button[text()='I understand, continue'], using=xpath}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 132.0.6834.110, chrome: {chromedriverVersion: 132.0.6834.159 (2d77d3fc445..., userDataDir: C:\Users\VIVEK~1.NIT\AppDat...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:54777}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:54777/devtoo..., se:cdpVersion: 132.0.6834.110, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: a4865250f472cac184cd26409ebd8aac
 at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
 at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:501)
 at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:485)
@@ -82,7 +82,7 @@ at ✽.the Risk Discloures page Should be open and able to click on continue but
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method is-config="true" signature="tearDownClass()[pri:0, instance:runner.Mstock@4e50c791]" started-at="2025-02-14T17:15:04 IST" name="tearDownClass" finished-at="2025-02-14T17:15:06 IST" duration-ms="2487" status="PASS">
+        <test-method is-config="true" signature="tearDownClass()[pri:0, instance:runner.Mstock@4e50c791]" started-at="2025-02-14T17:26:45 IST" name="tearDownClass" finished-at="2025-02-14T17:26:47 IST" duration-ms="2366" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDownClass -->
