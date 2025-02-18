@@ -273,9 +273,79 @@ public void mover() {
 	        }
 	
 	}
-	
-	
+	 //************************************************* Portfolio ***************************************************
+	 @FindBy(xpath="//a[@href='#/index/watchlist/Portfolio']")
+	 private WebElement Portfolio;
+	 @FindBy(xpath="//div[@class='total-asset']")
+	 private WebElement TotalAsset;
+	 @FindBy(xpath="(//p[@class='value'])[4]")
+	 private WebElement Equity;
+	 @FindBy(xpath="(//p[@class='value'])[5]")
+	 private WebElement Dayspl;
+	 @FindBy(xpath="(//p[@class='value'])[9]")
+	 private WebElement MFPL;
+	 @FindBy(xpath = ("//p[@style='text-align: right']"))
+	 private WebElement DaysPLMF;
+	 @FindBy(xpath = "//button[text()=' Add Funds ']")
+	 private WebElement Addfund;
+	 @FindBy(xpath = "//img[@id='logo']")
+	 private WebElement logo;
+	 @FindBy(xpath = "//img[@src='https://images.mstock.com/Web-images/Portfolio-Page-Banner/1.png']")
+	 private WebElement BSE_F_and_O;
+	 
+	public void portfolio() {
+		startTime = System.currentTimeMillis();
+    	Portfolio.click();
+        // Wait for the page to load or some element to be visible
+       // WebDriverWait wait = new WebDriverWait(driver, 10);
+              //  .until(ExpectedConditions.visibilityOfElementLocated(By.id("result-element")));
+        endTime = System.currentTimeMillis();
+        long loadTime = endTime - startTime;
+        System.out.println("Load time: " + loadTime + " milliseconds");
+    
+	}
+	public void  equity_overall_P_And_l(){
+		 String equity =Equity.getText();
+		 System.out.println(equity);
+		 String DayspL=Dayspl.getText();
+		 System.out.println(DayspL);
+	}
+	public void mutualFd() {
+		String MFmpl =MFPL.getText();
+		System.out.println(MFPL);
+		String MF1=DaysPLMF.getText();
+		System.out.println(MF1);
+		
+	}
+	public void MFAddFundbutton() throws InterruptedException {
+		Thread.sleep(1000);
+		Addfund.click();
+	}
+	public void fundspage() { 
+		String funds =Addfund.getText();
+		System.out.println(funds);
+	}
+	public void totalAsset() {
+		String total=TotalAsset.getText();
+		System.out.println(total);
+	}
+	public void MiraeAssetlogo() {
+		logo.click();
+	}
+	public void BSE_F_and_O() {
+		BSE_F_and_O.click();
+	}
+	public String featchtitleBSE_F_and_O() {
+		String verifytitle =driver.getTitle();
+		
+		return verifytitle;
 } 
+	public void Currenturl() {
+		String verifyURL =driver.getCurrentUrl();
+		System.out.println(verifyURL);
+	}
+}
+
 
 
 

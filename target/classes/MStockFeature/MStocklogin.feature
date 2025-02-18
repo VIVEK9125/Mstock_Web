@@ -23,7 +23,18 @@ Feature: MStock Login functionality
   Then verify the refer and Earn
   When To verify User is able to see the "Market Movers"  in which is able to see the "Gainers" And "Losers" below to Market Movers
   When To verify User is able to see the "View All " besides "Most traded on Mstock" CTA and it is clickable
- Then The CTA page Should be Open
+  Then The CTA page Should be Open
+  
+  #************************************************* Portpolio***************************************************
+  When To verify User is able to see  and click on the "Portfolio "Tab beside to "Home " Tab 
+  Then To verify User is able to see the amount of  Total Assets
+  And To verify User is able to see the amount of  Overall Profit/Loss
+  And To verify User is able to see the amount of  "Days Profit/Loss"
+  When To verify User is able to see the "MF " CTA below to  "Equity" and it should be clickable 
+  Then To verify User is able to see the "Add Fund " CTA  beside to Available cash and is clickable
+  When To verify User is able to see the Text  "BSE F & O LIVE " and is clickable 
+ 
+ 
   
 
 

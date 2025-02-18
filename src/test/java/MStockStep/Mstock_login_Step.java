@@ -145,4 +145,49 @@ public class Mstock_login_Step
 	public void the_cta_page_should_be_open() {
 	    MStocklogin.NSCBSC();
 	}
+	
+	//************************************************* Portpolio***************************************************
+	@When("To verify User is able to see  and click on the \"Portfolio \"Tab beside to {string} Tab")
+	public void to_verify_user_is_able_to_see_and_click_on_the_portfolio_tab_beside_to_tab(String string) {
+		MStocklogin.portfolio();
+	}
+
+	@Then("To verify User is able to see the amount of  Total Assets")
+	public void to_verify_user_is_able_to_see_the_amount_of_total_assets() {
+		MStocklogin.totalAsset();
+	  
+	}
+
+	@Then("To verify User is able to see the amount of  Overall Profit\\/Loss")
+	public void to_verify_user_is_able_to_see_the_amount_of_overall_profit_loss() {
+		 MStocklogin.equity_overall_P_And_l();
+	 
+	}
+
+	@Then("To verify User is able to see the amount of  {string}")
+	public void to_verify_user_is_able_to_see_the_amount_of(String string) {
+		 MStocklogin.mutualFd();
+	    
+	}
+
+	@When("To verify User is able to see the {string} CTA below to  {string} and it should be clickable")
+	public void to_verify_user_is_able_to_see_the_cta_below_to_and_it_should_be_clickable(String string, String string2) throws InterruptedException {
+		MStocklogin.MFAddFundbutton();
+	}
+
+	@Then("To verify User is able to see the {string} CTA  beside to Available cash and is clickable")
+	public void to_verify_user_is_able_to_see_the_cta_beside_to_available_cash_and_is_clickable(String string) {
+		 MStocklogin.fundspage();
+	}
+
+	@When("To verify User is able to see the Text  {string} and is clickable")
+	public void to_verify_user_is_able_to_see_the_text_and_is_clickable(String string) throws InterruptedException {
+	  MStocklogin.MiraeAssetlogo();
+	  MStocklogin.portfolio();
+	  Thread.sleep(1000);
+	  MStocklogin.BSE_F_and_O();
+	  MStocklogin.featchtitleBSE_F_and_O();
+	  Thread.sleep(1000);
+	  MStocklogin.Currenturl();
+	}
 }
