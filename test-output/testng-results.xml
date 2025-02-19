@@ -2,26 +2,26 @@
 <testng-results ignored="0" total="1" passed="0" failed="1" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2025-02-18T17:52:03 IST" name="Default suite" finished-at="2025-02-18T17:52:54 IST" duration-ms="50498">
+  <suite started-at="2025-02-19T14:49:54 IST" name="Default suite" finished-at="2025-02-19T14:50:37 IST" duration-ms="42591">
     <groups>
       <group name="cucumber">
         <method signature="AbstractTestNGCucumberTests.runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.Mstock@4e50c791]" name="runScenario" class="io.cucumber.testng.AbstractTestNGCucumberTests"/>
       </group> <!-- cucumber -->
     </groups>
-    <test started-at="2025-02-18T17:52:03 IST" name="Default test" finished-at="2025-02-18T17:52:54 IST" duration-ms="50498">
+    <test started-at="2025-02-19T14:49:54 IST" name="Default test" finished-at="2025-02-19T14:50:37 IST" duration-ms="42591">
       <class name="runner.Mstock">
-        <test-method is-config="true" signature="setUpClass(org.testng.ITestContext)[pri:0, instance:runner.Mstock@4e50c791]" started-at="2025-02-18T17:52:03 IST" name="setUpClass" finished-at="2025-02-18T17:52:04 IST" duration-ms="481" status="PASS">
+        <test-method is-config="true" signature="setUpClass(org.testng.ITestContext)[pri:0, instance:runner.Mstock@4e50c791]" started-at="2025-02-19T14:49:54 IST" name="setUpClass" finished-at="2025-02-19T14:49:54 IST" duration-ms="520" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[org.testng.TestRunner@3dc46f24]]>
+                <![CDATA[org.testng.TestRunner@28bf82d9]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUpClass -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.Mstock@4e50c791]" started-at="2025-02-18T17:52:04 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2025-02-18T17:52:51 IST" duration-ms="47491" status="FAIL">
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.Mstock@4e50c791]" started-at="2025-02-19T14:49:54 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2025-02-19T14:50:34 IST" duration-ms="39584" status="FAIL">
           <params>
             <param index="0">
               <value>
@@ -36,26 +36,26 @@
           </params>
           <exception class="org.openqa.selenium.ElementClickInterceptedException">
             <message>
-              <![CDATA[element click intercepted: Element <img _ngcontent-pje-c16="" class="ng-tns-c16-7" alt="banner" width="100%" src="https://images.mstock.com/Web-images/Portfolio-Page-Banner/1.png"> is not clickable at point (602, 762). Other element would receive the click: <div _ngcontent-pje-c1="" class="ngx-overlay foreground-closing" style="background-color: rgba(40, 40, 40, 0.8); border-radius: 0px;">...</div>
+              <![CDATA[element click intercepted: Element <button _ngcontent-xmk-c2="" class="subbtn">...</button> is not clickable at point (960, 566). Other element would receive the click: <div _ngcontent-xmk-c1="" class="ngx-foreground-spinner center-center" style="color: rgb(83, 83, 83); width: 60px; height: 60px; top: calc(50% + 96px);">...</div>
   (Session info: chrome=132.0.6834.110)
 Build info: version: '4.25.0', revision: '8a8aea2337'
 System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '23.0.1'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [a4d8667161b2cb5c7a37ad55693095be, clickElement {id=f.44DFED76F0AAEF46A6A84F672D0AAF33.d.261E17FE3A24ADCADD7894518D4DFDAA.e.214}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 132.0.6834.110, chrome: {chromedriverVersion: 132.0.6834.159 (2d77d3fc445..., userDataDir: C:\Users\VIVEK~1.NIT\AppDat...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:57369}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:57369/devtoo..., se:cdpVersion: 132.0.6834.110, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Element: [[ChromeDriver: chrome on windows (a4d8667161b2cb5c7a37ad55693095be)] -> xpath: //img[@src='https://images.mstock.com/Web-images/Portfolio-Page-Banner/1.png']]
-Session ID: a4d8667161b2cb5c7a37ad55693095be]]>
+Command: [10f0540bcbefcd32c999dbafbfecee56, clickElement {id=f.216CBD4CE17C532075B14355FA38091A.d.CB9D3947219923F780F0087BE7967A45.e.48}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 132.0.6834.110, chrome: {chromedriverVersion: 132.0.6834.159 (2d77d3fc445..., userDataDir: C:\Users\VIVEK~1.NIT\AppDat...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:55060}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:55060/devtoo..., se:cdpVersion: 132.0.6834.110, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on windows (10f0540bcbefcd32c999dbafbfecee56)] -> xpath: //button[text()='I understand, continue']]
+Session ID: 10f0540bcbefcd32c999dbafbfecee56]]>
             </message>
             <full-stacktrace>
-              <![CDATA[org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element <img _ngcontent-pje-c16="" class="ng-tns-c16-7" alt="banner" width="100%" src="https://images.mstock.com/Web-images/Portfolio-Page-Banner/1.png"> is not clickable at point (602, 762). Other element would receive the click: <div _ngcontent-pje-c1="" class="ngx-overlay foreground-closing" style="background-color: rgba(40, 40, 40, 0.8); border-radius: 0px;">...</div>
+              <![CDATA[org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element <button _ngcontent-xmk-c2="" class="subbtn">...</button> is not clickable at point (960, 566). Other element would receive the click: <div _ngcontent-xmk-c1="" class="ngx-foreground-spinner center-center" style="color: rgb(83, 83, 83); width: 60px; height: 60px; top: calc(50% + 96px);">...</div>
   (Session info: chrome=132.0.6834.110)
 Build info: version: '4.25.0', revision: '8a8aea2337'
 System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '23.0.1'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [a4d8667161b2cb5c7a37ad55693095be, clickElement {id=f.44DFED76F0AAEF46A6A84F672D0AAF33.d.261E17FE3A24ADCADD7894518D4DFDAA.e.214}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 132.0.6834.110, chrome: {chromedriverVersion: 132.0.6834.159 (2d77d3fc445..., userDataDir: C:\Users\VIVEK~1.NIT\AppDat...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:57369}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:57369/devtoo..., se:cdpVersion: 132.0.6834.110, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Element: [[ChromeDriver: chrome on windows (a4d8667161b2cb5c7a37ad55693095be)] -> xpath: //img[@src='https://images.mstock.com/Web-images/Portfolio-Page-Banner/1.png']]
-Session ID: a4d8667161b2cb5c7a37ad55693095be
+Command: [10f0540bcbefcd32c999dbafbfecee56, clickElement {id=f.216CBD4CE17C532075B14355FA38091A.d.CB9D3947219923F780F0087BE7967A45.e.48}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 132.0.6834.110, chrome: {chromedriverVersion: 132.0.6834.159 (2d77d3fc445..., userDataDir: C:\Users\VIVEK~1.NIT\AppDat...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:55060}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:55060/devtoo..., se:cdpVersion: 132.0.6834.110, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on windows (10f0540bcbefcd32c999dbafbfecee56)] -> xpath: //button[text()='I understand, continue']]
+Session ID: 10f0540bcbefcd32c999dbafbfecee56
 at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
 at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:501)
 at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:485)
@@ -72,16 +72,16 @@ at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethod
 at java.base/java.lang.reflect.Method.invoke(Method.java:580)
 at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
 at jdk.proxy2/jdk.proxy2.$Proxy26.click(Unknown Source)
-at Page_Object_Modul.MStock_Login_page.BSE_F_and_O(MStock_Login_page.java:336)
-at MStockStep.Mstock_login_Step.to_verify_user_is_able_to_see_the_text_and_is_clickable(Mstock_login_Step.java:187)
-at ✽.To verify User is able to see the Text  "BSE F & O LIVE " and is clickable(file:///C:/Users/vivek.nityo/git/New%20folder/MStock_Web/src/main/resources/MStockFeature/MStocklogin.feature:35)
+at Page_Object_Modul.MStock_Login_page.clkcontineus(MStock_Login_page.java:110)
+at MStockStep.Mstock_login_Step.the_risk_discloures_page_should_be_open_and_able_to_click_on_continue_button(Mstock_login_Step.java:57)
+at ✽.the Risk Discloures page Should be open and able to click on continue button(file:///C:/Users/vivek.nityo/git/New%20folder/MStock_Web/src/main/resources/MStockFeature/MStocklogin.feature:10)
 ]]>
             </full-stacktrace>
           </exception> <!-- org.openqa.selenium.ElementClickInterceptedException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method is-config="true" signature="tearDownClass()[pri:0, instance:runner.Mstock@4e50c791]" started-at="2025-02-18T17:52:51 IST" name="tearDownClass" finished-at="2025-02-18T17:52:54 IST" duration-ms="2494" status="PASS">
+        <test-method is-config="true" signature="tearDownClass()[pri:0, instance:runner.Mstock@4e50c791]" started-at="2025-02-19T14:50:34 IST" name="tearDownClass" finished-at="2025-02-19T14:50:37 IST" duration-ms="2467" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDownClass -->

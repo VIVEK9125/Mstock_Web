@@ -25,7 +25,7 @@ Feature: MStock Login functionality
   When To verify User is able to see the "View All " besides "Most traded on Mstock" CTA and it is clickable
   Then The CTA page Should be Open
   
-  #************************************************* Portpolio***************************************************
+  #************************************************* portfolio***************************************************
   When To verify User is able to see  and click on the "Portfolio "Tab beside to "Home " Tab 
   Then To verify User is able to see the amount of  Total Assets
   And To verify User is able to see the amount of  Overall Profit/Loss
@@ -34,6 +34,19 @@ Feature: MStock Login functionality
   Then To verify User is able to see the "Add Fund " CTA  beside to Available cash and is clickable
   When To verify User is able to see the Text  "BSE F & O LIVE " and is clickable 
  
+ #************************************************* OMS ***************************************************
+  When User come on Back tab
+  And The User click on the watchlist tab
+  Then The watchlist page is open
+  And To verify User is able to see the Stock name in the Watchlist-1
+  When To verify User is place order of "Abc " for Nse/ Bse for Buy Side of "Invest" Product Type  with Price and Quantity 
+  And the user is Select Scrip Name and click on Buy button
+  And User is select the product type
+  And User is Select the Exchange
+  And The User is Select the Order side
+  And the user enter the quantity
+  And the user Enter the Amount 
+  And the click on the buy tab
  
   
 

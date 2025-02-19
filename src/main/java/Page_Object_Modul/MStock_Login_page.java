@@ -2,6 +2,7 @@ package Page_Object_Modul;
 
 import static org.testng.Assert.assertEquals;
 
+import java.util.ArrayList;
 import java.util.List;
 import java.util.concurrent.TimeUnit;
 
@@ -343,6 +344,17 @@ public void mover() {
 	public void Currenturl() {
 		String verifyURL =driver.getCurrentUrl();
 		System.out.println(verifyURL);
+	}
+	public void helpmainPage() throws InterruptedException {
+		Thread.sleep(2000);
+		//Get the list of all open tabs
+        ArrayList<String> tabs = new ArrayList<>(driver.getWindowHandles());
+ 
+        // Switch to the new tab
+        driver.switchTo().window(tabs.get(0));
+        
+		System.out.println("HELP MAIN PAGE TITLE IS  :" + driver.getTitle() +"AND HELP PAGE OPEN SUCCESSFULLY");
+		
 	}
 }
 

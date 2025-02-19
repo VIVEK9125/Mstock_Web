@@ -57,9 +57,9 @@ function toggleAllBoxes() {
 <tr>
 <td>Tests passed/Failed/Skipped:</td><td>0/1/0</td>
 </tr><tr>
-<td>Started on:</td><td>Tue Feb 18 17:52:03 IST 2025</td>
+<td>Started on:</td><td>Wed Feb 19 14:49:54 IST 2025</td>
 </tr>
-<tr><td>Total time:</td><td>50 seconds (50498 ms)</td>
+<tr><td>Total time:</td><td>42 seconds (42591 ms)</td>
 </tr><tr>
 <td>Included groups:</td><td></td>
 </tr><tr>
@@ -76,15 +76,15 @@ function toggleAllBoxes() {
 </tr>
 <tr>
 <td title='runner.Mstock.runScenario()'><b>runScenario</b><br>Test class: runner.Mstock<br>Test method: Runs Cucumber Scenarios<br>Parameters: "To Validate the Mstock Login with valid credentials", "MStock Login functionality"</td>
-<td><div><pre>org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element &lt;img _ngcontent-pje-c16=&quot;&quot; class=&quot;ng-tns-c16-7&quot; alt=&quot;banner&quot; width=&quot;100%&quot; src=&quot;https://images.mstock.com/Web-images/Portfolio-Page-Banner/1.png&quot;&gt; is not clickable at point (602, 762). Other element would receive the click: &lt;div _ngcontent-pje-c1=&quot;&quot; class=&quot;ngx-overlay foreground-closing&quot; style=&quot;background-color: rgba(40, 40, 40, 0.8); border-radius: 0px;&quot;&gt;...&lt;/div&gt;
+<td><div><pre>org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element &lt;button _ngcontent-xmk-c2=&quot;&quot; class=&quot;subbtn&quot;&gt;...&lt;/button&gt; is not clickable at point (960, 566). Other element would receive the click: &lt;div _ngcontent-xmk-c1=&quot;&quot; class=&quot;ngx-foreground-spinner center-center&quot; style=&quot;color: rgb(83, 83, 83); width: 60px; height: 60px; top: calc(50% + 96px);&quot;&gt;...&lt;/div&gt;
   (Session info: chrome=132.0.6834.110)
 Build info: version: &apos;4.25.0&apos;, revision: &apos;8a8aea2337&apos;
 System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;23.0.1&apos;
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [a4d8667161b2cb5c7a37ad55693095be, clickElement {id=f.44DFED76F0AAEF46A6A84F672D0AAF33.d.261E17FE3A24ADCADD7894518D4DFDAA.e.214}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 132.0.6834.110, chrome: {chromedriverVersion: 132.0.6834.159 (2d77d3fc445..., userDataDir: C:\Users\VIVEK~1.NIT\AppDat...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:57369}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:57369/devtoo..., se:cdpVersion: 132.0.6834.110, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Element: [[ChromeDriver: chrome on windows (a4d8667161b2cb5c7a37ad55693095be)] -&gt; xpath: //img[@src=&apos;https://images.mstock.com/Web-images/Portfolio-Page-Banner/1.png&apos;]]
-Session ID: a4d8667161b2cb5c7a37ad55693095be
+Command: [10f0540bcbefcd32c999dbafbfecee56, clickElement {id=f.216CBD4CE17C532075B14355FA38091A.d.CB9D3947219923F780F0087BE7967A45.e.48}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 132.0.6834.110, chrome: {chromedriverVersion: 132.0.6834.159 (2d77d3fc445..., userDataDir: C:\Users\VIVEK~1.NIT\AppDat...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:55060}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:55060/devtoo..., se:cdpVersion: 132.0.6834.110, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on windows (10f0540bcbefcd32c999dbafbfecee56)] -&gt; xpath: //button[text()=&apos;I understand, continue&apos;]]
+Session ID: 10f0540bcbefcd32c999dbafbfecee56
 	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
 	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:501)
 	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:485)
@@ -101,19 +101,19 @@ Session ID: a4d8667161b2cb5c7a37ad55693095be
 	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
 	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
 	at jdk.proxy2/jdk.proxy2.$Proxy26.click(Unknown Source)
-	at Page_Object_Modul.MStock_Login_page.BSE_F_and_O(MStock_Login_page.java:336)
-	at MStockStep.Mstock_login_Step.to_verify_user_is_able_to_see_the_text_and_is_clickable(Mstock_login_Step.java:187)
-	at ✽.To verify User is able to see the Text  &quot;BSE F &amp; O LIVE &quot; and is clickable(file:///C:/Users/vivek.nityo/git/New%20folder/MStock_Web/src/main/resources/MStockFeature/MStocklogin.feature:35)
-</pre></div><a href='#' onClick='toggleBox("stack-trace2080444788", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace2080444788'><pre>org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element &lt;img _ngcontent-pje-c16=&quot;&quot; class=&quot;ng-tns-c16-7&quot; alt=&quot;banner&quot; width=&quot;100%&quot; src=&quot;https://images.mstock.com/Web-images/Portfolio-Page-Banner/1.png&quot;&gt; is not clickable at point (602, 762). Other element would receive the click: &lt;div _ngcontent-pje-c1=&quot;&quot; class=&quot;ngx-overlay foreground-closing&quot; style=&quot;background-color: rgba(40, 40, 40, 0.8); border-radius: 0px;&quot;&gt;...&lt;/div&gt;
+	at Page_Object_Modul.MStock_Login_page.clkcontineus(MStock_Login_page.java:110)
+	at MStockStep.Mstock_login_Step.the_risk_discloures_page_should_be_open_and_able_to_click_on_continue_button(Mstock_login_Step.java:57)
+	at ✽.the Risk Discloures page Should be open and able to click on continue button(file:///C:/Users/vivek.nityo/git/New%20folder/MStock_Web/src/main/resources/MStockFeature/MStocklogin.feature:10)
+</pre></div><a href='#' onClick='toggleBox("stack-trace1997623038", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1997623038'><pre>org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element &lt;button _ngcontent-xmk-c2=&quot;&quot; class=&quot;subbtn&quot;&gt;...&lt;/button&gt; is not clickable at point (960, 566). Other element would receive the click: &lt;div _ngcontent-xmk-c1=&quot;&quot; class=&quot;ngx-foreground-spinner center-center&quot; style=&quot;color: rgb(83, 83, 83); width: 60px; height: 60px; top: calc(50% + 96px);&quot;&gt;...&lt;/div&gt;
   (Session info: chrome=132.0.6834.110)
 Build info: version: &apos;4.25.0&apos;, revision: &apos;8a8aea2337&apos;
 System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;23.0.1&apos;
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [a4d8667161b2cb5c7a37ad55693095be, clickElement {id=f.44DFED76F0AAEF46A6A84F672D0AAF33.d.261E17FE3A24ADCADD7894518D4DFDAA.e.214}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 132.0.6834.110, chrome: {chromedriverVersion: 132.0.6834.159 (2d77d3fc445..., userDataDir: C:\Users\VIVEK~1.NIT\AppDat...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:57369}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:57369/devtoo..., se:cdpVersion: 132.0.6834.110, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Element: [[ChromeDriver: chrome on windows (a4d8667161b2cb5c7a37ad55693095be)] -&gt; xpath: //img[@src=&apos;https://images.mstock.com/Web-images/Portfolio-Page-Banner/1.png&apos;]]
-Session ID: a4d8667161b2cb5c7a37ad55693095be
+Command: [10f0540bcbefcd32c999dbafbfecee56, clickElement {id=f.216CBD4CE17C532075B14355FA38091A.d.CB9D3947219923F780F0087BE7967A45.e.48}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 132.0.6834.110, chrome: {chromedriverVersion: 132.0.6834.159 (2d77d3fc445..., userDataDir: C:\Users\VIVEK~1.NIT\AppDat...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:55060}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:55060/devtoo..., se:cdpVersion: 132.0.6834.110, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on windows (10f0540bcbefcd32c999dbafbfecee56)] -&gt; xpath: //button[text()=&apos;I understand, continue&apos;]]
+Session ID: 10f0540bcbefcd32c999dbafbfecee56
 	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
 	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:501)
 	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:485)
@@ -130,11 +130,11 @@ Session ID: a4d8667161b2cb5c7a37ad55693095be
 	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
 	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
 	at jdk.proxy2/jdk.proxy2.$Proxy26.click(Unknown Source)
-	at Page_Object_Modul.MStock_Login_page.BSE_F_and_O(MStock_Login_page.java:336)
-	at MStockStep.Mstock_login_Step.to_verify_user_is_able_to_see_the_text_and_is_clickable(Mstock_login_Step.java:187)
-	at ✽.To verify User is able to see the Text  &quot;BSE F &amp; O LIVE &quot; and is clickable(file:///C:/Users/vivek.nityo/git/New%20folder/MStock_Web/src/main/resources/MStockFeature/MStocklogin.feature:35)
+	at Page_Object_Modul.MStock_Login_page.clkcontineus(MStock_Login_page.java:110)
+	at MStockStep.Mstock_login_Step.the_risk_discloures_page_should_be_open_and_able_to_click_on_continue_button(Mstock_login_Step.java:57)
+	at ✽.the Risk Discloures page Should be open and able to click on continue button(file:///C:/Users/vivek.nityo/git/New%20folder/MStock_Web/src/main/resources/MStockFeature/MStocklogin.feature:10)
 </pre></div></td>
-<td>47</td>
+<td>39</td>
 <td>runner.Mstock@4e50c791</td></tr>
 </table><p>
 </body>
