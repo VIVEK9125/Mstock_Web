@@ -12,6 +12,7 @@ import org.openqa.selenium.Keys;
 import org.openqa.selenium.NoSuchElementException;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
+import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 import org.openqa.selenium.support.ui.ExpectedConditions;
@@ -356,6 +357,71 @@ public void mover() {
 		System.out.println("HELP MAIN PAGE TITLE IS  :" + driver.getTitle() +"AND HELP PAGE OPEN SUCCESSFULLY");
 		
 	}
+	 //************************************************* OMS ***************************************************
+	
+	@FindBy(xpath = "//a[text()='Watchlist']") private WebElement Watchlist;
+	@FindBy(xpath = "//div[@class=\"watchlistcubes activeWatchlist ng-star-inserted\"]")
+	private WebElement tooltip;
+	@FindBy(xpath = "//tr[@class='watchlistExpandMatTableRow mat-row ng-star-inserted']")
+	private WebElement Socklist;
+	@FindBy(xpath = "//button[text()='Buy']") 
+	private WebElement button;
+	@FindBy(xpath = "//input[@onlynumber='true']") private WebElement Quantity;
+	@FindBy(xpath = "//input[@id='mat-input-3']") private WebElement Price;
+	@FindBy(xpath = "//button[text()='BUY']") private WebElement PopupBuy;
+	
+	
+	
+	public void Watchlisttab() {
+		startTime = System.currentTimeMillis();
+		Watchlist.click();
+        // Wait for the page to load or some element to be visible
+       // WebDriverWait wait = new WebDriverWait(driver, 10);
+              //  .until(ExpectedConditions.visibilityOfElementLocated(By.id("result-element")));
+        endTime = System.currentTimeMillis();
+        long loadTime = endTime - startTime;
+        System.out.println("Load time: " + loadTime + " milliseconds");
+    
+	}
+	public void tooltip() {
+		String WACHLIST =tooltip.getAttribute("WATCHLIST_1");
+		System.out.println("Tooltip: "+WACHLIST);
+		
+	}
+	public void MovesOver() throws InterruptedException {
+		Thread.sleep(1000);
+		Actions actions = new Actions(driver);
+		actions.moveToElement(Socklist).perform();
+		
+	}
+	public void Buybutton() {
+		button.click();
+	}
+	public void EnterQuantity() {
+		Quantity.sendKeys("2");
+	}
+	public void Enterprice() throws InterruptedException {
+		Thread.sleep(1000);
+		double minPrice = 188;
+        double maxPrice = 229.77;
+        double price = minPrice + (Math.random() * (maxPrice - minPrice));
+        Price.sendKeys(String.valueOf(price));
+	}
+	public void popupbuy() {
+		PopupBuy.click();
+	}
+	//****************************************************NSE DAY TREADE********************************************************
+	@FindBy(xpath = "//div[text()=' DAY TRADE']") private WebElement producttype;
+	
+	public void ProductType() {
+		producttype.click();
+	}
+	
+	
+	
+	
+	
+	
 }
 
 

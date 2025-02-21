@@ -28,17 +28,17 @@ public class ApplicationHook
 		 driver = df.intiBrowser(browserName);
 		driver.manage().window().maximize();
 	}
-//	@After(order=2)
-//	public void teardown(Scenario scenario){
-//		boolean Screnshotfail = scenario.isFailed();
-//		if(Screnshotfail) {
-//			String verifyname = scenario.getName();
-//			String updatename = verifyname.replaceAll(" ", "_");
-//			TakesScreenshot js = (TakesScreenshot)driver;
-//			 byte[] bitevalue = js.getScreenshotAs(OutputType.BYTES);
-//			scenario.attach(bitevalue, "image/png/jpge", updatename);
-//		}
-//	}
+	@After(order=2)
+	public void teardown(Scenario scenario){
+		boolean Screnshotfail = scenario.isFailed();
+		if(Screnshotfail) {
+			String verifyname = scenario.getName();
+			String updatename = verifyname.replaceAll(" ", "_");
+			TakesScreenshot js = (TakesScreenshot)driver;
+			 byte[] bitevalue = js.getScreenshotAs(OutputType.BYTES);
+			scenario.attach(bitevalue, "image/png/jpge", updatename);
+		}
+	}
 //	@After(order=1)
 //	public void closewindow() {
 //		driver.quit();

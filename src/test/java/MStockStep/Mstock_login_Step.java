@@ -190,4 +190,90 @@ public class Mstock_login_Step
 	  Thread.sleep(1000);
 	  MStocklogin.Currenturl();
 	}
+	 //************************************************* OMS ***************************************************
+	
+	@When("the user comes to the Back tab")
+	public void the_user_comes_to_the_back_tab() throws InterruptedException {
+	    MStocklogin.helpmainPage();
+	}
+
+	@When("the user clicks on the watchlist tab")
+	public void the_user_clicks_on_the_watchlist_tab() {
+	    MStocklogin.Watchlisttab();
+	}
+
+	@Then("verify the user is able to see the stock name in Watchlist-{int}")
+	public void verify_the_user_is_able_to_see_the_stock_name_in_watchlist(Integer int1) {
+		MStocklogin.tooltip();
+	}
+
+	@When("verify the user places an order of {string} for NSE\\/BSE for the Buy side of {string} product type with price and quantity")
+	public void verify_the_user_places_an_order_of_for_nse_bse_for_the_buy_side_of_product_type_with_price_and_quantity(String string, String string2) throws InterruptedException {
+	   
+		MStocklogin.MovesOver();
+	}
+
+	@When("the user selects the scrip name and clicks on the Buy button")
+	public void the_user_selects_the_scrip_name_and_clicks_on_the_buy_button() {
+	   MStocklogin.Buybutton();
+	}
+
+	@When("the user selects the product type")
+	public void the_user_selects_the_product_type() {
+	    
+	}
+
+	@When("the user selects the exchange")
+	public void the_user_selects_the_exchange() {
+	    
+	}
+
+	@When("the user selects the order side")
+	public void the_user_selects_the_order_side() {
+	   
+	}
+
+	@When("the user enters the quantity")
+	public void the_user_enters_the_quantity() {
+	    MStocklogin.EnterQuantity();
+	}
+
+	@When("the user enters the amount")
+	public void the_user_enters_the_amount() throws InterruptedException {
+	   // MStocklogin.Enterprice();
+	}
+
+	@When("the user clicks on the buy button")
+	public void the_user_clicks_on_the_buy_button() {
+        MStocklogin.popupbuy();
+	}
+	 //****************************************************NSE DAY TREADE********************************************************
+	
+	@When("the user selects the scrip name and click on the Buy button")
+	public void the_user_selects_the_scrip_name_and_click_on_the_buy_button() throws InterruptedException {
+	    MStocklogin.MovesOver();
+	    MStocklogin.Buybutton();
+	}
+
+	@When("the user selects {string} product type")
+	public void the_user_selects_product_type(String string) throws InterruptedException {
+		Thread.sleep(1000);
+	    MStocklogin.ProductType();
+	}
+
+	@When("the user enters the quantities")
+	public void the_user_enters_the_quantities() {
+	   MStocklogin.EnterQuantity();
+	}
+
+//	@When("the user enters the amount range")
+//	public void the_user_enters_the_amount_range() {
+//	  
+//	}
+
+	@When("the user click on the buy button")
+	public void the_user_click_on_the_buy_button() {
+		  MStocklogin.popupbuy();
+	}
+
 }

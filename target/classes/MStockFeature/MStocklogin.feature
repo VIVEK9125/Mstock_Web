@@ -35,18 +35,23 @@ Feature: MStock Login functionality
   When To verify User is able to see the Text  "BSE F & O LIVE " and is clickable 
  
  #************************************************* OMS ***************************************************
-  When User come on Back tab
-  And The User click on the watchlist tab
-  Then The watchlist page is open
-  And To verify User is able to see the Stock name in the Watchlist-1
-  When To verify User is place order of "Abc " for Nse/ Bse for Buy Side of "Invest" Product Type  with Price and Quantity 
-  And the user is Select Scrip Name and click on Buy button
-  And User is select the product type
-  And User is Select the Exchange
-  And The User is Select the Order side
-  And the user enter the quantity
-  And the user Enter the Amount 
-  And the click on the buy tab
+  When the user comes to the Back tab
+  And the user clicks on the watchlist tab
+  Then verify the user is able to see the stock name in Watchlist-1
+  When verify the user places an order of "Abc" for NSE/BSE for the Buy side of "Invest" product type with price and quantity
+  And the user selects the scrip name and clicks on the Buy button
+  And the user selects the product type
+  And the user selects the exchange
+  And the user selects the order side
+  And the user enters the quantity
+  And the user enters the amount
+  And the user clicks on the buy button
+  #****************************************************NSE Daytread********************************************************
+  When the user selects the scrip name and click on the Buy button
+  And the user selects "DAY Tread" product type
+  And the user enters the quantities
+  #And the user enters the amount range
+  And the user click on the buy button
  
   
 

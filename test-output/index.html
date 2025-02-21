@@ -51,7 +51,7 @@
               <ul>
                 <li>
                   <a href="#" panel-name="test-xml-Default_suite" class="navigator-link ">
-                    <span>C:\Users\vivek.nityo\AppData\Local\Temp\testng-eclipse-368365793\testng-customsuite.xml</span>
+                    <span>C:\Users\vivek.nityo\AppData\Local\Temp\testng-eclipse--316557434\testng-customsuite.xml</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
@@ -131,15 +131,14 @@
                   </a> <!-- runScenario("To Validate the Mstock Login with valid credentials", "MStock Login functionality") -->
                   <span class="method-name">runScenario</span>
                   <span class="parameters">("To Validate the Mstock Login with valid credentials", "MStock Login functionality")</span>
-                  <div class="stack-trace">org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element &lt;button _ngcontent-xmk-c2=&quot;&quot; class=&quot;subbtn&quot;&gt;...&lt;/button&gt; is not clickable at point (960, 566). Other element would receive the click: &lt;div _ngcontent-xmk-c1=&quot;&quot; class=&quot;ngx-foreground-spinner center-center&quot; style=&quot;color: rgb(83, 83, 83); width: 60px; height: 60px; top: calc(50% + 96px);&quot;&gt;...&lt;/div&gt;
-  (Session info: chrome=132.0.6834.110)
+                  <div class="stack-trace">org.openqa.selenium.ElementNotInteractableException: Element &lt;button class=&quot;btn buy_button&quot;&gt; could not be scrolled into view
 Build info: version: &apos;4.25.0&apos;, revision: &apos;8a8aea2337&apos;
 System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;23.0.1&apos;
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [10f0540bcbefcd32c999dbafbfecee56, clickElement {id=f.216CBD4CE17C532075B14355FA38091A.d.CB9D3947219923F780F0087BE7967A45.e.48}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 132.0.6834.110, chrome: {chromedriverVersion: 132.0.6834.159 (2d77d3fc445..., userDataDir: C:\Users\VIVEK~1.NIT\AppDat...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:55060}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:55060/devtoo..., se:cdpVersion: 132.0.6834.110, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Element: [[ChromeDriver: chrome on windows (10f0540bcbefcd32c999dbafbfecee56)] -&gt; xpath: //button[text()=&apos;I understand, continue&apos;]]
-Session ID: 10f0540bcbefcd32c999dbafbfecee56
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Command: [0efcbf5d-b700-4513-9c3f-3efb73b7e8b7, clickElement {id=170e8ec7-e521-47ff-9b09-0a1fa52d2c83}]
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 135.0.1, moz:accessibilityChecks: false, moz:buildID: 20250216192613, moz:debuggerAddress: 127.0.0.1:30892, moz:geckodriverVersion: 0.35.0, moz:headless: false, moz:platformVersion: 10.0, moz:processID: 43432, moz:profile: C:\Users\VIVEK~1.NIT\AppDat..., moz:shutdownTimeout: 60000, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://127.0.0.1:30892/devtoo..., se:cdpVersion: 85.0, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, userAgent: Mozilla/5.0 (Windows NT 10....}
+Element: [[FirefoxDriver: firefox on windows (0efcbf5d-b700-4513-9c3f-3efb73b7e8b7)] -&gt; xpath: //button[text()=&apos;Buy&apos;]]
+Session ID: 0efcbf5d-b700-4513-9c3f-3efb73b7e8b7
 	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
 	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:501)
 	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:485)
@@ -155,10 +154,10 @@ Session ID: 10f0540bcbefcd32c999dbafbfecee56
 	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
 	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
 	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
-	at jdk.proxy2/jdk.proxy2.$Proxy26.click(Unknown Source)
-	at Page_Object_Modul.MStock_Login_page.clkcontineus(MStock_Login_page.java:110)
-	at MStockStep.Mstock_login_Step.the_risk_discloures_page_should_be_open_and_able_to_click_on_continue_button(Mstock_login_Step.java:57)
-	at ✽.the Risk Discloures page Should be open and able to click on continue button(file:///C:/Users/vivek.nityo/git/New%20folder/MStock_Web/src/main/resources/MStockFeature/MStocklogin.feature:10)
+	at jdk.proxy2/jdk.proxy2.$Proxy27.click(Unknown Source)
+	at Page_Object_Modul.MStock_Login_page.Buybutton(MStock_Login_page.java:398)
+	at MStockStep.Mstock_login_Step.the_user_selects_the_scrip_name_and_click_on_the_buy_button(Mstock_login_Step.java:255)
+	at ✽.the user selects the scrip name and click on the Buy button(file:///C:/Users/vivek.nityo/git/New%20folder/MStock_Web/src/main/resources/MStockFeature/MStocklogin.feature:50)
 
 </div> <!-- stack-trace -->
                   <em>
@@ -170,7 +169,7 @@ Session ID: 10f0540bcbefcd32c999dbafbfecee56
         </div> <!-- panel Default_suite -->
         <div panel-name="test-xml-Default_suite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">C:\Users\vivek.nityo\AppData\Local\Temp\testng-eclipse-368365793\testng-customsuite.xml</span>
+            <span class="header-content">C:\Users\vivek.nityo\AppData\Local\Temp\testng-eclipse--316557434\testng-customsuite.xml</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <pre>
@@ -231,12 +230,12 @@ data.addRows(1);
 data.setCell(0, 0, 0)
 data.setCell(0, 1, 'runScenario')
 data.setCell(0, 2, 'runner.Mstock')
-data.setCell(0, 3, 39584);
+data.setCell(0, 3, 125373);
 window.suiteTableData['Default_suite']= { tableData: data, tableDiv: 'times-div-Default_suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 39 seconds</span>
+              <span class="suite-total-time">Total running time: 2 minutes</span>
               <div id="times-div-Default_suite">
               </div> <!-- times-div-Default_suite -->
             </div> <!-- times-div -->
@@ -264,18 +263,18 @@ return data;
             <div class="chronological-class">
               <div class="chronological-class-name">runner.Mstock</div> <!-- chronological-class-name -->
               <div class="configuration-class before">
-                <span class="method-name">setUpClass(org.testng.TestRunner@28bf82d9)</span>
+                <span class="method-name">setUpClass(org.testng.TestRunner@c318864)</span>
                 <span class="method-start">0 ms</span>
               </div> <!-- configuration-class before -->
               <div class="test-method">
                 <img src="failed.png">
                 </img>
                 <span class="method-name">runScenario("To Validate the Mstock Login with valid credentials", "MStock Login functionality")</span>
-                <span class="method-start">525 ms</span>
+                <span class="method-start">460 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-class after">
                 <span class="method-name">tearDownClass</span>
-                <span class="method-start">40113 ms</span>
+                <span class="method-start">125833 ms</span>
               </div> <!-- configuration-class after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
