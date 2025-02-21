@@ -1,6 +1,6 @@
 Feature: MStock Login functionality
 
-   Scenario: To Validate the Mstock Login with valid credentials
+   Scenario: To Validate the Mstock Post Login Flow
   Given the user is on the login page
   When the user enters username and password
   And the user clicks on the login button
@@ -52,9 +52,25 @@ Feature: MStock Login functionality
   And the user enters the quantities
   #And the user enters the amount range
   And the user click on the buy button
- 
   
-
+    #****************************************************BSE Invest********************************************************
+  When the user selects the scrip name and click on the Sell button
+  When the user selects "BSE" type
+  And the user enters the quantities in input field
+  And the user click on the sell button
+  #****************************************************BSE DAY TREADE********************************************************
+   When the user selects the scrip name and click on the Sell button on pop up
+  When the user selects "BSE & DAYTREAD"
+  And the user enters the quantities in input
+  And the user click on the sell button on pop up
+  
+ #****************************************************Verify the Recent Order********************************************************
+ When the User click on Order tabs
+ And the user click on the "Executed" Tab
+ Then the Current order should be displayed
+ When the user click on 1st order
+ And the user click on the order trail
+ Then the order details is displayed
 
 
  

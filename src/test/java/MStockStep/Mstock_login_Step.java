@@ -275,5 +275,84 @@ public class Mstock_login_Step
 	public void the_user_click_on_the_buy_button() {
 		  MStocklogin.popupbuy();
 	}
+	 //****************************************************BSE Invest********************************************************
+
+	@When("the user selects the scrip name and click on the Sell button")
+	public void the_user_selects_the_scrip_name_and_click_on_the_sell_button() throws InterruptedException {
+		 MStocklogin.MovesOver();
+		    MStocklogin.Buybutton();
+	}
+
+	@When("the user selects {string} type")
+	public void the_user_selects_type(String string) {
+	 MStocklogin.BSEInvest();
+	}
+
+	@When("the user enters the quantities in input field")
+	public void the_user_enters_the_quantities_in_input_field() {
+		   MStocklogin.EnterQuantity();
+	}
+
+	@When("the user click on the sell button")
+	public void the_user_click_on_the_sell_button() throws InterruptedException {
+	    MStocklogin.Sellbutton();
+	}
+	//****************************************************BSE DAY TREADE********************************************************
+
+	@When("the user selects the scrip name and click on the Sell button on pop up")
+	public void the_user_selects_the_scrip_name_and_click_on_the_sell_button_on_pop_up() throws InterruptedException {
+		MStocklogin.MovesOver();
+	    MStocklogin.Buybutton();
+	}
+
+	@When("the user selects {string}")
+	public void the_user_selects(String string) throws InterruptedException {
+		MStocklogin.BSEInvest();
+		Thread.sleep(1000);
+	    MStocklogin.ProductType();
+	}
+
+	@When("the user enters the quantities in input")
+	public void the_user_enters_the_quantities_in_input() {
+		 MStocklogin.EnterQuantity();
+	}
+
+	@When("the user click on the sell button on pop up")
+	public void the_user_click_on_the_sell_button_on_pop_up() throws InterruptedException {
+		 MStocklogin.Sellbutton();
+	}
+	
+	//****************************************************Verify the Recent Order********************************************************
+	
+	@When("the User click on Order tabs")
+	public void the_user_click_on_order_tabs() {
+	   MStocklogin.Order();
+	}
+
+	@When("the user click on the {string} Tab")
+	public void the_user_click_on_the_tab(String string) {
+	  MStocklogin.Executed();
+	}
+
+	@Then("the Current order should be displayed")
+	public void the_current_order_should_be_displayed() {
+	  
+	}
+
+	@When("the user click on 1st order")
+	public void the_user_click_on_1st_order() {
+		MStocklogin.currentorder();
+	   
+	}
+
+	@When("the user click on the order trail")
+	public void the_user_click_on_the_order_trail() {
+	  MStocklogin.Ordertrail();
+	}
+
+	@Then("the order details is displayed")
+	public void the_order_details_is_displayed() throws InterruptedException {
+		MStocklogin.popup();
+	}
 
 }

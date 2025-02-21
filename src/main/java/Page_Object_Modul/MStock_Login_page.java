@@ -1,14 +1,11 @@
 package Page_Object_Modul;
 
-import static org.testng.Assert.assertEquals;
-
 import java.util.ArrayList;
 import java.util.List;
 import java.util.concurrent.TimeUnit;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.JavascriptExecutor;
-import org.openqa.selenium.Keys;
 import org.openqa.selenium.NoSuchElementException;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
@@ -17,6 +14,7 @@ import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
+import org.testng.Assert;
 
 public class MStock_Login_page 
 {
@@ -416,6 +414,64 @@ public void mover() {
 	public void ProductType() {
 		producttype.click();
 	}
+	 //****************************************************BSE Invest********************************************************
+	@FindBy(xpath = "//button[text()='BSE']") 
+	private WebElement BSE;
+	@FindBy(xpath = "//button[text()=' SELL']") 
+	private WebElement Sell;
+	@FindBy(xpath = "//button[@type='submit']") 
+	private WebElement Submit;
+	public void BSEInvest() {
+		try {
+			Thread.sleep(1000);
+		} catch (InterruptedException e) {
+			
+			e.printStackTrace();
+		}
+		BSE.click();
+	}
+	public void Sellbutton() throws InterruptedException {
+		Sell.click();
+		Thread.sleep(1000);
+		Submit.click();
+	}
+	
+	//****************************************************Verify the Recent Order********************************************************
+	
+	@FindBy(xpath = "//a[text()='Orders']")
+	private WebElement Order;
+	@FindBy(xpath = "//span[@class='g-l pointer']")
+	private WebElement Executed;
+	@FindBy(xpath = "(//*[@role=\"row\"])[2]")
+	private WebElement currentOrder;
+	@FindBy(xpath = "(//button[@class=\"seil\"])[2]")
+	private WebElement Ordertrail;
+	@FindBy(xpath = "//div[@class=\"details-container pb-3\"]") 
+	private WebElement popup;
+	@FindBy(xpath = "//*[@class=\"cross-btn\"]")
+	private WebElement Crossbtn;
+	
+	public void Order() {
+		Order.click();
+		
+	}
+	public void Executed() {
+		Executed.click();
+	}
+	public void currentorder() {
+		currentOrder.click();
+	}
+	public void Ordertrail() {
+		Ordertrail.click();
+	}
+	public void popup() throws InterruptedException {
+		String verifytext=popup.getText();
+		System.out.println(verifytext);
+		Thread.sleep(1000);
+		Crossbtn.click();
+	}
+
+	
 	
 	
 	

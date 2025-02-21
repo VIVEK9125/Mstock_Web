@@ -11,7 +11,7 @@ public class DriverFactory
 	public WebDriver intiBrowser(String browserName)
 	{
 		if(browserName.equals("Chrome")) {
-		 driver= new FirefoxDriver();
+		 driver= new ChromeDriver();
 		}
 		else
 		{
